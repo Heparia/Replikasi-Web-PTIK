@@ -1,0 +1,84 @@
+
+.persentase > p::after {
+    content: "%";
+}
+.histogram-chart {
+    display: flex;
+    flex-direction: column;
+    width: var(--lebar);
+    font-size: var(--font);
+    transition: transform 0.3s, opacity 0.3s;
+}
+.histogram-grap {
+    display: flex;
+    flex-direction: row;
+}
+.label-x {
+    display: flex;
+    flex-direction: row;
+    width: calc(var(--lebar) - var(--lebar-y) - var(--lebar-x));
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.label-x>p{
+    width: var(--lebar-x);
+    text-align: center;
+}
+.label-y {
+    display: flex;
+    flex-direction: column-reverse;
+    height: var(--tinggi);
+    align-items: flex-start;
+    margin-right: 10px;
+    width: var(--lebar-y);
+}
+.label-y > p{
+    height: 100%;
+    padding-top: 0;
+    margin-top: 0;
+}
+.histogram {
+    border-width: 0 0 5px 5px;
+    border-style: solid;
+    border-color: black;
+    height: var(--tinggi);
+    width: calc(var(--lebar) - var(--lebar-x) - var(--lebar-y));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.nilai {
+    height: var(--value);
+    background-color: var(--bg-color);
+    width: var(--lebar-x);
+    transition: transform 0.3s, opacity 0.3s;
+}
+.nilai:hover, .histogram-chart:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+.nilai > p {
+    text-align: center;
+    color: white;
+    padding-top: 0;
+    margin-top: 0;
+}
+.title-histogram {
+    text-align: center;
+    width: var(--lebar);
+    text-transform: capitalize;
+    font-size:large;
+}
+.title-y {
+    width: calc(2*var(--lebar-y));
+    text-align: center;
+}
+.title-x {
+    display: flex;
+    align-items: flex-end;
+    height: var(--tinggi);
+    padding-left: 10px;
+    width: fit-content;
+}

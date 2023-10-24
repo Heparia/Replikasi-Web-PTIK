@@ -1,0 +1,104 @@
+#about {
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+}
+#about .judul {
+    text-align: center;
+    margin: 30px;
+}
+iframe {
+    border-radius: 30px;
+}
+#about .isi {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+#about > .isi> section {
+    padding: 0 20px 0;
+    height:480px;
+}
+#about> .isi> section:first-child {
+    flex: 2;
+}
+#about >.isi> section:last-child {
+    flex: 2;
+    overflow-y: auto;
+    background-color: whitesmoke;
+    border-radius: 30px 0 0 30px;
+}
+.judul h1 strong{
+    color: hsl(196, 100%, 47%);
+}
+#goal{
+    color: black;
+}
+#goal strong {
+    color: whitesmoke;
+}
+#visi .judul h1{
+    text-align: center;
+}
+#goal .judul h1 {
+    text-align: right;
+}
+#visi {
+    width: 60%;
+    margin: auto;
+}
+article h1{
+    font-size: 100px;
+    padding: 0;
+    margin: 0;
+}
+#visi .isi {
+    font-size: x-large;
+    line-height: 200%;
+    font-family: 'Gloria Hallelujah', 'Poppins', sans-serif;
+}
+#visi .isi strong {
+    font-size: 50px;
+}
+.misigoal-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: 100px auto;
+}
+.misigoal {
+    padding: 100px;
+}
+.misigoal li {
+    font-size: large;
+}
+#misi {
+    background-color: whitesmoke;
+    border: 2px dashed #78dbff;
+}
+#goal {
+    background-color: #78dbff;
+}
+ul li {
+    margin: 30px;
+}
+#partners {
+    margin: 100px;
+    margin-top: 0;
+}
+#partners .isi {
+    height: 145px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+#partners .isi img {
+    margin: 20px;
+    width: 80%;
+    transition: transform 0.3s, opacoty 0.3s;
+}
+#partners .isi img:hover {
+    transform: scale(1.1);
+}
+

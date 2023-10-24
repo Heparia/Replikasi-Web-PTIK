@@ -1,0 +1,281 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+.article-top {
+    display: flex;
+    flex-direction: row;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    color: #00AFEF;
+    align-items: center;
+    border: 2px solid #00AFEF;
+    width: fit-content;
+    border-radius: 10px;
+}
+.title > h2 {
+    margin: 0;
+    padding: 10px 15px;
+}
+.title > .imgIcon {
+    background-color: #00AFEF;
+    padding-left: 2px;
+    border-radius: 0 8px 8px 0;
+}
+.title > .imgIcon > img {
+    width: 40px;
+    border-radius: 10px;
+    padding: 10px;
+}
+article {
+    border-radius: 20px;
+    margin: 20px;
+}
+#profile {
+    background: linear-gradient(to bottom right, transparent, transparent, #00AFEF);
+    text-align: right;
+}
+#accreditation {
+    background: linear-gradient(to bottom left, transparent, transparent, #00AFEF);
+}
+
+article > .articleDiv {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+#profile > .articleDiv {
+    align-items: flex-end;
+}
+#profile > div > .title{
+    flex-direction: row-reverse;
+    justify-content: end;
+}
+#profile > div > .title > div {
+    border-radius: 8px 0 0 8px;
+}
+.content > p {
+    margin: 30px 30px 20px 30px;
+}
+.button {
+    margin-top: 20px;
+    margin-bottom: 18px;
+}
+.button > a {
+    color: #00AFEF;
+    background-color: #DAEBF2;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: background-color 0.5s, opacity 0.5s;
+}
+.button > a:hover {
+    background-color: #00AFEF;
+    color: white;
+}
+.box-x {
+    padding: 4px;
+    background: linear-gradient(to top, transparent, transparent, #a6e7ff , #00AFEF);
+}
+.box-x > .articleDiv {
+    align-items: center;
+}
+.box-x > div > .title {
+    flex-direction: column-reverse;
+    border: none;
+    font-size: 40px;
+}
+.box-x > div > .title > div {
+    background-color: transparent;
+}
+.box-x > div > .title > div > img {
+    filter: invert(56%) sepia(46%) saturate(2143%) hue-rotate(158deg) brightness(91%) contrast(108%);
+    width: 200px;
+    padding-bottom: 0;
+}
+h2 > em {
+    font-size: smaller;
+    font-weight: lighter;
+}
+.article-bottom {
+    align-items: center;
+}
+.box-x {
+    display: flex;
+    flex-direction: row;
+    background: none;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 75%;
+}
+.titleImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-x > .articleDiv {
+    background: linear-gradient(to left, transparent, #f7fcff, #a6e7ff, #00AFEF);
+    border-radius: 20px;
+    padding: 40px;
+}
+.box-x > .articleDiv > section {
+    background-color: white;
+    border-radius: 15px;
+}
+#college-building {
+    background-blend-mode: color-burn;
+    background-image: url(https://i0.wp.com/ptik.fkip.uns.ac.id/wp-content/uploads/2021/02/67439499_2189454404510870_7837235522285696065_n.jpg?w=1080&ssl=1);
+}
+#laboratory {
+    background-image: url(https://i0.wp.com/ptik.fkip.uns.ac.id/wp-content/uploads/2021/02/01c2f6d5-dc76-41ee-8bb3-a58f64378fb4-1.jpg?w=1280&ssl=1);
+}
+#library {
+    background-image: url(https://i0.wp.com/ptik.fkip.uns.ac.id/wp-content/uploads/2021/02/05206515-84e3-400d-9ea2-851d3dc2d76e.jpg?w=1280&ssl=1);
+}
+#multimedia-studio {
+    background-image: url(https://i0.wp.com/ptik.fkip.uns.ac.id/wp-content/uploads/2021/02/fdcaf4b0-bd4d-492f-aff1-21e4fd37f033.jpg?w=1280&ssl=1);
+}
+.title > div > img:hover {
+    transform: none;
+    box-shadow: none; 
+}
+
+
+.article-top > article {
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+.animate-from-top-left {
+    animation: slideFromTopLeft 2s forwards;
+}
+
+.animate-from-top-right {
+    animation: slideFromTopRight 2s forwards;
+}
+
+.animate-from-bottom {
+    animation: slideFromBottom 3s forwards;
+}
+
+@keyframes slideFromTopLeft {
+    from {
+        opacity: 0;
+        transform: translateY(-100px) translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) translateX(0);
+    }
+}
+
+@keyframes slideFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes slideFromTopRight {
+    from {
+        opacity: 0;
+        transform: translateY(-100px) translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) translateX(0);
+    }
+}
+.carousel-x-dua {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 250px;
+    height: 180px;
+    border-radius: 10px;
+    padding: 0;
+}
+.carousel-container-x-dua  > .carousel-item {
+    width: 250px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    color: #00AFEF;
+}
+.carousel-container-x-dua > .carousel-item > p {
+    width: 250px;
+    height: 180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 0.5s, opacity 0.5s;
+    background-blend-mode: color-burn;
+    font-size: 30px;
+    text-align: center;
+}
+
+.carousel-container-x-dua {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    animation: slideXDua 20s ease-in-out infinite;
+}
+.carousel-container-x-dua > .carousel-item > p:hover {
+    color: white;
+    font-weight: bold;
+    background-blend-mode:color-burn;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+}
+@keyframes slideXDua {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-250px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+#datang {
+    flex-direction: row-reverse;
+    width: 95%;
+    margin: 0;
+    padding: 0;
+}
+#datang > .articleDiv {
+    background: linear-gradient(to right, transparent, #f7fcff, #a6e7ff, #00AFEF);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: right;
+}
+.title > img {
+    width:300px;
+}
+.ketTitle {
+    display: flex;
+    flex-direction: row;
+    font-size: xx-small;
+    justify-content: space-between;
+}
+#piala{
+    margin-top: 15%;
+    filter: none;
+}

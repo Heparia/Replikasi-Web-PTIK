@@ -1,0 +1,91 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 7%;
+    width: 80%;
+    border-radius: 10px;
+    margin: 5% auto;
+    border-radius: 10px;
+    padding: 20px;
+    border: 2px solid gainsboro;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 0px 8px 5px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 1px 0px 8px 5px rgba(0,0,0,0.25);
+    -moz-box-shadow: 1px 0px 8px 5px rgba(0,0,0,0.25);
+}
+.kontak {
+    flex-basis: 3;
+    width: 100%;
+    padding: 7% 17%;
+    border: 2px solid #00AFEF;
+    background-color: #00AFEF;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    height: 100%;
+}
+
+iframe {
+    border-radius: 10px;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    border-radius: 10px;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+}
+.title > h2, .title > p {
+    font-size: 50px;
+    margin: 0;
+    padding: 0;
+}
+.title > p {
+    font-size: 15px;
+}
+label {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+form > input, form> textarea {
+    width:95%;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+form >input[type="submit"] {
+    background-color: #000c11;
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    border-radius: 10px;
+    margin: auto;
+}
+#send {
+    background-color: #000c11;  
+    color: white;
+}
+.email {
+    margin-bottom: 8%;
+}
+.kontak > section > .socialMedia {
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.kontak > section > .socialMedia > a {
+    margin-right: 10px;
+}
+.kontak > section > .socialMedia > a > img {
+    width: 30px;
+}
